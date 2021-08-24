@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>To Do Application</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="blur">
-        <div class="heading">
-            <h1 class="tasks-bold">Tasks <span class="lists-light">List</span></h1>           
-            <span>
-                <a href="#" class="addList"><i class="fa fa-plus-circle" style="font-size: 36px;color: blue;" aria-hidden="true"></i> Add Item</a>
-            </span>
-        </div>
+      <div class="heading">
+        <h1 class="tasks-bold">Tasks <span class="lists-light">List</span></h1>
+        <span>
+          <a href="#" class="addList"
+            ><i
+              class="fa fa-plus-circle"
+              style="font-size: 36px; color: blue"
+              aria-hidden="true"
+            ></i>
+            Add Item</a
+          >
+        </span>
+      </div>
 
-        <div class="row-list">
-            <!--Dynamic Card-->
-            <div class="cards"></div>
-        </div>     
-        <!--Empty message-->
-        <p class="no-item-message">No Items in the todo list </p>
+      <div class="task-container">
+        <!--Dynamic Card-->
+        <div class="cards"></div>
+      </div>
+      <!--Empty message-->
+      <p class="no-item-message">No Items in the todo list</p>
     </div>
 
     <!--Card Popup-->
     <div class="add-card-popup">
-        <p>Add New List</p>
-        <input class="card-field" type="text" placeholder="Add new list">
-        <button id="addCard" class="btn"><a href="#">Add</a></button>
-        <button class="btn card-popup-close">Close</button>
+      <p>Add New Card</p>
+      <input class="card-field" type="text" placeholder="Add new card" />
+      <button id="addCard" class="btn"><a href="#">Add</a></button>
+      <button class="btn card-popup-close">Close</button>
     </div>
 
     <!--Item Popup-->
     <div class="add-item-popup">
-        <p>Add New Item</p>
-        <input class="item-field" type="text">
-        <button id="addItem" class="btn"><a href="#">Add</a></button>
-        <button class="btn item-popup-close">Close</button>
+      <p>Add New Item</p>
+      <input class="item-field" type="text" />
+      <button id="addItem" class="btn"><a href="#">Add</a></button>
+      <button class="btn item-popup-close">Close</button>
     </div>
-    
+
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
